@@ -125,6 +125,9 @@
 
     <script src="js/howler.js"></script>
     <script>
+        document.addEventListener('touchstart', function () {
+            document.getElementById("music").play();
+        });
       /*  var music = new Howl({
             src: ['Star Wars Main Theme (Full).ogg'],
 		    autoplay: true

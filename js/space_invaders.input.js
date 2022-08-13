@@ -24,15 +24,15 @@ space_invaders.input = (function () {
         this.handleCommand = function (command) {
             switch (command) {
             case CMD_FIRE:
-                document.getElementById('music').play();
+                //document.getElementById('music').play();
                 ship.fire();
                 break;
             case CMD_SHIP_LEFT:
-                document.getElementById('music').play();
+                //document.getElementById('music').play();
                 ship.moveLeft();
                 break;
             case CMD_SHIP_RIGHT:
-                document.getElementById('music').play();
+                //document.getElementById('music').play();
                 ship.moveRight();
                 break;
             default:
