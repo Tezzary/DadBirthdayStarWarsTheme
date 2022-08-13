@@ -93,7 +93,7 @@
     </style>
 </head>
 <body>
-    <audio id="music" src="Star Wars Main Theme (Full).ogg"></audio>
+    <audio  src="Star Wars Main Theme (Full).ogg" type="audio/ogg" id="music"></audio>
 <!-- 
 <audio> NOT WORKING ON MOBILE, use howler.js / Web Audio API
 
@@ -125,8 +125,11 @@
 
     <script src="js/howler.js"></script>
     <script>
+        console.log("Hello1")
         document.addEventListener('touchstart', function () {
+            console.log("Hello")
             document.getElementById("music").play();
+            
         });
       /*  var music = new Howl({
             src: ['Star Wars Main Theme (Full).ogg'],
